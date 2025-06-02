@@ -123,4 +123,19 @@ Use an else branch in the when for any temperatures outside these specific descr
     }
 
     println(advice)
+
+    /*
+    Exercise 7: Nullable Name Greeting 👋
+Declare a nullable String variable named userName.
+Assign a name to it (e.g., "Alice").
+Write an if statement to check if userName is not null.
+If it's not null, print "Hello, [userName]!".
+If it is null, print "Hello, Guest!".
+Now, set userName to null and observe the different output.
+     */
+
+    var name= null
+
+    if (name !== null){println("Hello $name")}else {println("Hello Guest")}
+
 }
