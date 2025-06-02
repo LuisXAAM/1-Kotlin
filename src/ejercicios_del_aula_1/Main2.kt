@@ -89,5 +89,14 @@ Print:
 
      */
 
+    val savedUsername = "LuisXaam"
+    val savedPassword = 12345689
+
+    var enteredUsername = "LuisXaam"
+    var enteredPassword = 23456789
+
+    if (savedUsername == enteredUsername && savedPassword == enteredPassword) {println("Login Successful")}
+    else if (savedUsername == enteredUsername && savedPassword !== enteredPassword) {println("Incorrect Password")}
+    else{println("Incorrect Username")}
 
 }
