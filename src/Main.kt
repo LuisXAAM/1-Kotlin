@@ -7,4 +7,20 @@ fun main() {
     }
 
     printHello()
+
+    // operadores kotlin
+
+    //suma
+    println(1+1)
+    //resta
+    println(2-1)
+    //multiplicacion
+    println(2*5)
+    // division
+    println(20/10)
+    println(1/2)
+    println(1.3/2.0)
+
+
 }
+
