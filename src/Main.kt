@@ -59,5 +59,20 @@ fun main() {
     val hexBytes = 0xFF_EC_DE_5E
     val bytes = 0b11010010_01101001_10010100_10010010
 
+
+    // var vs val
+
+    var fishes = 1
+    fishes = 2
+    val aquarium = 1
+    // aqui da error porque val es inmutable osea es una constante que no puede ser modificada  aquarium = 2
+
+    //template + concatenacion
+
+    val numberOfFish = 5
+    val numberOfPlants = 12
+    "I have $numberOfFish fish" + " and $numberOfPlants plants"
+
+
 }
 
