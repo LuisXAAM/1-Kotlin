@@ -52,4 +52,31 @@ If the list is not empty, print "First task: [task]". If that first task itself 
     } else {
         println("First task: ${firstTask ?: "[No task description]"}")
     }
+
+    /*
+
+    Exercise 3: Item Prices 💰
+Create an array of String to store item names. Initialize it with a few item names.
+Create a second array of nullable Doubles (Double?) to store the corresponding prices. This allows for some items to not have a price listed yet. Initialize it with some prices and at least one null, ensuring both arrays have the same number of elements.
+Write code to print the details for a specific item by index:
+Choose an index programmatically (e.g., assign it to a variable).
+Safely access the item name from the first array and its price from the second array using this index.
+Print a message like: "Item: [Name], Price: $[Price]"
+If the price is null for that item, print "Item: [Name], Price: Not available".
+If the chosen index is out of bounds for the arrays, print "Invalid item index."
+     */
+
+    var itemName: ArrayList<String> = arrayListOf("Huevos", "Tomates", "ajies", "cebolla", "Pollo", "res")
+    var itemPrice: MutableList<Double?> = mutableListOf(230.69,27.45,null,70.25,128.62,169.5)
+
+    var indexSelect =1
+
+    if(indexSelect in itemName.indices){
+        var nombre = itemName[indexSelect]
+        var price  = itemPrice[indexSelect]
+        println("Artículo: $nombre, Precio: ${price?.run { "\$$this" } ?: "No disponible"}")
+    } else {
+        println("Índice de elemento no válido")
+    }
+
 }
