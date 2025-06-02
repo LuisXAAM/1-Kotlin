@@ -97,6 +97,28 @@ Print the actual settings being applied in the format: "Applying theme: [actualC
     var actualFontSize = settingFontSize ?: 12
 
     println("Applying theme: $actualColorTheme, Font size: $actualFontSize")
+/*
 
+Exercise 5: Summing Nullable Scores 📊
+Create a read-only list of nullable Integers (List<Int?>) that contains a mix of integer scores and null values.
+Iterate through the list. For each element:
+If the element is not null, print "Score recorded: [score]".
+If the element is null, print "Attempt missed."
+Calculate the sum of all non-null scores in the list.
+Initialize a sum variable to 0.
+In your loop, only add the score to your sum if it's not null.
+Print the total sum: "Total score from recorded attempts: [sum]".
+BONUS: Create a new list that contains only the non-null scores from the original list. Print this new list.
+ */
 
+    val scores : List<Int?> = listOf(80,null,60,89,null,95,null,100,72,null)
+    var sum = 0
+
+    for(score in scores ) if(score != null ){println("Score recorded: $score")
+    sum += score} else{println("Attempt missed")}
+
+    println("Total score from recorded attempts: $sum")
+
+    val scorenotnull = scores.filterNotNull()
+    println(" valid score: ${scorenotnull}")
 }
