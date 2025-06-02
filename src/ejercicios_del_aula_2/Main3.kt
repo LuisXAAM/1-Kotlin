@@ -79,4 +79,24 @@ If the chosen index is out of bounds for the arrays, print "Invalid item index."
         println("Índice de elemento no válido")
     }
 
+    /*
+
+    Exercise 4: Default Configuration Values ⚙️
+Declare two nullable variables: settingColorTheme (String) and settingFontSize (Int).
+Simulate loading these settings by assigning them values, or leaving one or both null.
+Determine the actual values to use:
+For actualColorTheme, use settingColorTheme if it's not null; otherwise, default to "Light".
+For actualFontSize, use settingFontSize if it's not null; otherwise, default to 12.
+You must use the Elvis operator (?:) for this.
+Print the actual settings being applied in the format: "Applying theme: [actualColorTheme], Font size: [actualFontSize]pt."
+     */
+    var settingColorTheme : String? = null
+    var settingFontSize : Int? = null
+
+    var actualColorTheme = settingColorTheme ?: "Light"
+    var actualFontSize = settingFontSize ?: 12
+
+    println("Applying theme: $actualColorTheme, Font size: $actualFontSize")
+
+
 }
